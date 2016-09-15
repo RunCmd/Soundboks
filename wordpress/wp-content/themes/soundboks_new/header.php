@@ -49,14 +49,8 @@
 	                            <li><a href="#services" class="page-scroll">Europe</a></li>
 	                        </ul>
 	                    </div>
-	                    <div class="main-shop hidden-xs">
+	                    <div class="main-shop">
 	                    	<?php wp_nav_menu( array('menu_class' =>'nav navbar-nav', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-	                     <!--    <ul class="">
-	                            <li><a href="#">Speaker</a></li>
-	                            <li><a href="#">Shop</a></li>
-	                            <li><a href="#">Support</a></li>
-	                            <li><a href="#" id="shop-cart"><img src="<?php bloginfo('template_url'); ?>/images/cart-full-black.png" alt="shopping cart"></a></li>
-	                        </ul> -->
 	                    </div>
 	                </div>
 	            </div>
@@ -64,5 +58,3 @@
 	    </header>
 	<!--End  Header #masthead 
 	    ============================================= -->
-
-	<div id="content" class="site-content">

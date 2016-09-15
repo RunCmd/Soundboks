@@ -151,6 +151,10 @@ a:active, a:visited{outline:none;background-color:transparent;}
 @media screen and (max-width:992px){
 		/****** NAVBAR HEADER / LOGO / CART **********/
 	.navbar-main{min-height:auto;}
+  .navbar-main .navbar-nav li{display:inline-block;}
+  .navbar-main .nav-wrap .nav-region{float:left;}
+  .main-shop .navbar-nav li:nth-child(4){display:none;}
+  .navbar-main .nav>li>a{font-size:12px;padding: 25px 4px;}
 /****** SECOND SECTION CART / Garants **********/
 	.garanties{min-height:auto;}
 	.garanties img{ width: 29.5px;float:none;padding-right:0px;}
