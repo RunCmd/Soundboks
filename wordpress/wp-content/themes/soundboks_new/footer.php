@@ -21,7 +21,11 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<!-- jQuery -->
+    <script src="<?php bloginfo('template_url'); ?>/js/jquery-3.1.0.min.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 <?php wp_footer(); ?>
 
 </body>

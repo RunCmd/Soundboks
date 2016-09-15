@@ -15,7 +15,13 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<!-- Bootstrap Core CSS -->
+    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="<?php bloginfo('template_url'); ?>/css/mystyle.css" rel="stylesheet">
+ 	<!--Fonts Styles-->
+     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css">
 <?php wp_head(); ?>
 </head>
 

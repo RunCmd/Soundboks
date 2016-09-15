@@ -1,0 +1,194 @@
+/* 
+Author:Daniel Neshkoski;
+Theme: SoundBoks;
+version:1.0;
+
+*/
+@font-face {font-family: "ConduitITCW01-Bold";
+    src: url("https://db.onlinewebfonts.com/t/589dc5dbe01f7ed323ccab2fd9ec9fe0.eot");
+    src: url("https://db.onlinewebfonts.com/t/589dc5dbe01f7ed323ccab2fd9ec9fe0.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/589dc5dbe01f7ed323ccab2fd9ec9fe0.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/589dc5dbe01f7ed323ccab2fd9ec9fe0.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/589dc5dbe01f7ed323ccab2fd9ec9fe0.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/589dc5dbe01f7ed323ccab2fd9ec9fe0.svg#ConduitITCW01-Bold") format("svg");
+}
+@font-face {font-family: "ConduitITCW01-ExtraLight";
+    src: url("https://db.onlinewebfonts.com/t/ead6449474faae19620297ad606f46a4.eot");
+    src: url("https://db.onlinewebfonts.com/t/ead6449474faae19620297ad606f46a4.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ead6449474faae19620297ad606f46a4.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ead6449474faae19620297ad606f46a4.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/ead6449474faae19620297ad606f46a4.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ead6449474faae19620297ad606f46a4.svg#ConduitITCW01-ExtraLight") format("svg");
+}
+ body{font-family: "ConduitITCW01-Bold";
+ font-size:16px;}
+/*Default Change CSS*/
+a{color:black;}
+a:hover{color:#f47c60;background-color:transparent;}
+a:focus{outline:none;background-color:transparent;}
+
+a:active, a:visited{outline:none;background-color:transparent;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{outline:none;}
+/***********************/
+/* HEADER SECTION */
+.navbar-main{min-height:150px;margin-bottom:0px;}
+.navbar-main .navbar-header{width: 28%;padding-right: 15px;}
+.navbar-main .nav-wrap{width:28%;}
+.navbar-main .nav-wrap .nav-region{float:right;}
+.navbar-main #shop-cart{padding: 20px 15px;}
+.navbar-main .main-shop{float:right;padding:0 15px;}
+
+.navbar-main .nav>li>a{padding:25px 10px; font-size: 17.9px;text-transform:uppercase;background-color:transparent;}
+
+
+.navbar-main .nav-wrap .line{color:rgba(151, 151, 151, 0.2);}
+.navbar-main .navbar-brand{height:75px;padding:16px 15px;}
+/**************************/
+
+/* SECTION SECOND GARANTS*/
+.garanties{min-height:120px;}
+.garanties .cart-i h1{padding-left:10px;color:black;  font-size: 40px;font-weight: bold;font-style: normal; font-stretch: normal;}
+.garanties img{float:left;padding-right: 25px;}
+.garanties .icons-i{opacity:0.5;}
+.garanties .icons-i h1{text-transform:uppercase;padding: 12px 0px;font-size:16px; font-weight: bold;font-style: normal;font-stretch: normal;}
+.garanties .width-icons{width:22%;}
+.garanties #world-text {width:190px;padding:0px 0px;}
+/***************************/
+
+/* SECTION THIRD SHOP CART*/
+.checkout-info a:hover{text-decoration:none;color:#f47c60;}
+.shop-cart .media-body{padding-left:25px;}
+.shop-cart .divider{ border: dashed 1px rgba(0, 0, 0, 0.06);}
+.shop-cart .top-space{padding:25px 0px;}
+.shop-cart .price-card , .shop-cart .total-card{padding: 42px 0px;}
+.shop-cart .total-card a{ font-size: 20px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 0.9;color: #000000;}
+.shop-cart .price-card a{font-size: 20px;font-weight: 300;font-style: normal;font-stretch: normal;color: #000000;}
+.shop-cart .media-heading{ font-size: 20px;font-weight: bold;font-style: normal; font-stretch: normal;}
+.shop-cart .media-body p{ font-size: 16px;font-weight: 300;font-style: normal;font-stretch: normal;line-height: 1.13;}
+.shop-cart .quantity-card a{font-size: 30px;color:#f47c60;}
+.shop-cart .quanty{font-size:20px;    text-indent: 3px;}
+#del-all-card{padding: 0 15px;opacity:0.2;}
+#del-all-card:hover{color:#f47c60;opacity:1;}
+/* Sub********** FORM DISCOUNT  AND TOTAL*/
+.form-discount input{opacity:0.6;min-height:60px;border: solid 1px #dddddd;font-size:20px;line-height: 0.9;color: #cecece;}
+.form-discount input:focus{box-shadow:none;border-color:none;}
+.form-discount .form-control:focus{outline:none;box-shadow:none;border-color:#dddddd;}
+.check-disc h3{padding: 8px 0px;width:52%;margin: 0 30px;font-family: "ConduitITCW01-ExtraLight"; font-size: 16px;font-weight: 300;font-style: normal;font-stretch: normal;line-height: 1.13;color: #000000;}
+.check-disc span{font-weight:bold;font-family: "ConduitITCW01-Bold";}
+.check-disc i{padding: 8px 0px;font-size:20px;color:#7ed321;float:left;}
+.check-disc {margin:20px 0px;}
+/*TWO BUTTONS INPUTS SUBMITS SUBSCRIBE AND APPLY DISCOUNT */
+.btn-apply, .btn-subscribe{text-transform:uppercase;color:#fff;line-height:0.9;}
+.btn-apply{background-color: #d8d8d8;min-height:60px;width:166px;max-width:100%;font-size:20px;}
+.btn-subscribe{min-height:60px;background-color: #f47c60;width:117px;max-width:100%;font-size:16px;}
+.btn-apply:hover, .btn-subscribe:hover{color:#fff;}
+.btn-apply:focus, .btn-apply:visited, .btn-subscribe:visited, .btn-subscribe:focus{outline:none;color:#fff;border-color:#d8d8d8;box-shadow:none;}
+.total-all h3, .value-spend{text-transform:uppercase;font-size: 18px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.13;color: #000000;}
+.value-spend{float:right;padding-right:20px;}
+.total-all .update-cart{display: block;float:left;text-transform:uppercase;font-size: 20px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 2.9;color: #000000;}
+.total-all .update-cart:hover,.total-all .update-cart:focus,.total-all .update-cart:visited{text-decoration:none;}
+.total-all .btn-checkout{display: block;float: right;font-size: 20px;width: 177px;height: 60px;text-transform: uppercase;color:#fff; border-radius: 100px;background-color: #f47c60;}
+.total-all .update-cart i{margin-right: 10px;opacity: 0.3;}
+/*============================= */
+.checkout-info{float:right;display: block;clear: both;margin-left: auto;}
+.checkout-info p:nth-child(1){opacity:0.6;font-size: 12px;font-weight: 300;font-style: normal;font-stretch: normal;text-align: right;font-family: "ConduitITCW01-ExtraLight"; color: #000000;    padding: 10px 25px;}
+.checkout-info p:nth-child(2){margin: 0 0 0px;text-align: left;font-weight: bold;color: #f47c60;font-size:16px;}
+.checkout-info p:nth-child(3){margin: 0 0 0px;text-align: left;font-size:16px;font-family: "ConduitITCW01-ExtraLight";}
+.checkout-info a{text-align: left;color: #1f1f1f;font-size:16px;}
+/**************************/
+
+/* FORTH SECTION ALSO INTERESTED */
+.hr-line{height:1px;background: #d7d7d7;}
+.content-in h2{font-family: "ConduitITCW01-Bold";margin:8px auto;font-size: 20px;font-weight: bold;font-style: normal;font-stretch: normal;}
+.interest-in{margin-top:25px;}
+.in-stock{margin:95px auto;}
+.in-stock a:hover, .in-stock a:focus, .in-stock a:visited{color:#000;text-decoration:none;}
+.in-stock .media-body{padding:0px 20px;}
+.title-stock h3, .cost-stock p{ line-height:1.2;font-size: 20px;font-weight: bold;font-style: normal;font-stretch: normal;}
+.title-stock p{ max-width: 100%;width: 180px;font-size: 16px;font-weight: 300;font-style: normal;font-stretch: normal;line-height: 1.19;}
+.cost-stock p:nth-child(2){margin-bottom:0px;opacity: 0.3;font-size: 16px;font-weight: bold;font-style: normal;font-stretch: normal;color: #000000;}
+.cost-stock span{font-size: 12px;font-weight: bold;font-style: normal;font-stretch: normal;color: #0074cb;}
+/*****************************/
+
+/* FIFTH SECTION FOOTER */
+.footer a:visited, .footer a:focus, .footer a:active{background-color:transparent;}
+.footer .navbar-brand{padding-left:0px;}
+.form-discount .form-group{float:left;}
+.nav-links, .socials-icons{float:right;min-height:68px;}
+.socials-icons .nav li>a{padding:0 0px;}
+.socials-icons .nav li>a:hover, .nav-links .nav li>a:hover{background-color:transparent;text-decoration:none;}
+.socials-icons .nav{text-align:right;padding:15px 0px;}
+.nav-links .nav li, .socials-icons .nav li{display: inline-block;}
+.nav-links .nav li>a{padding:16px 8px;font-size: 16px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 2.13;text-transform:uppercase;}
+.nav-links .nav li>a:hover{background-color:transparent;}
+.footer .latest-offer{margin-top:50px;}
+.latest-offer h4{ text-transform:uppercase;font-size: 16px;font-weight: bold;font-style: normal;line-height: 0.94;}
+.latest-offer address p{  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.67;
+  color: #000000;opacity:0.7;margin-bottom:0;}
+.latest-offer address{padding:35px 0px;}
+.privacy p{opacity: 0.7;font-size:12px; line-height: 1.67; font-weight: 300;}
+.privacy a{color:#f47c60;}
+
+.loud-music{ width:100%; background-color: rgba(0, 0, 0, 0.03); min-height: 68px;}
+.loud-music h3{margin-bottom:0px; padding:25px 0px;letter-spacing: 2px;opacity:0.2;text-align: center;color: #000000;font-size:20px;}
+/******************************/
+
+/* MEDIA SCREEN MOBILE/TABLET */
+@media screen and (min-width:320px) and (max-width:767px){
+	.navbar-main .fa-bars{color:black;}
+	.navbar-main .navbar-toggle{float:left;}
+	.navbar-main .navbar-brand{}
+	.navbar-main .navbar-header{width:100%;padding-right:0px;margin:0 auto;}
+	.navbar-main .navbar-brand>img{width:120px;max-width: 100%;margin: auto;}
+	.navbar-main #shop-cart{padding:12px 0px;float:right;}
+	/****** **********/
+
+	
+}
+@media screen and (max-width:992px){
+		/****** NAVBAR HEADER / LOGO / CART **********/
+	.navbar-main{min-height:auto;}
+/****** SECOND SECTION CART / Garants **********/
+	.garanties{min-height:auto;}
+	.garanties img{ width: 29.5px;float:none;padding-right:0px;}
+	.cart-i{width:100%;margin:auto;text-align:center;}
+	.garanties .cart-i h1{font-size: 22px;display:inline-block;margin: 0 auto;vertical-align: middle;}
+/****** **********/
+	
+/****** CART SHOP/ ******/
+.shop-cart .media-object{width: 76.8px;}
+.shop-cart .quantity-card a{font-size:25px;}
+.shop-cart .quanty{font-size:18px;}
+.shop-cart .price-card, .shop-cart .total-card{padding:8px 0px;}
+.shop-cart .quanty, .shop-cart .quantity-card a{padding: 0px 10px;display:inline-block;}
+.shop-cart .quantity-card i:nth-child(1){transform: rotate(-90deg);}
+.shop-cart .quantity-card i:nth-child(2){transform: rotate(90deg);}
+.form-discount input, .btn-apply, .total-all .btn-checkout, .shop-cart .price-card a{font-size:16px;}
+.form-discount .input-group, .btn-apply{width: 134px;}
+.check-disc h3{width:100%;margin:0 0px;font-size: 12px;}
+.check-disc i{padding:8px 5px;}
+.total-all h3, .value-spend, .total-all .update-cart{font-size:16px;}
+.shop-cart .total-card a{font-size:18px;}
+.total-all .btn-checkout{ width: 143.8px;}
+.total-all .form-inline{padding: 20px 0px;}
+.checkout-info{float:none;text-align:center;}
+.checkout-info p:nth-child(2), .checkout-info p:nth-child(3){text-align:center;}
+/*********** FOOTER SECTION ***********/
+.footer{background-color:#f4f4f4;margin-top:25px;}
+.footer .latest-offer{margin:0 auto;}
+.nav-links, .socials-icons{text-align: center;float:none;}
+.credit, .socials-icons .nav{text-align:center;}
+.nav-links .nav li>a{font-size:12px;padding: 0px 4px;}
+.nav-links, .socials-icons{min-height:auto;}
+.nav-links .nav{padding:20px 0px;}
+.garanties-mobile{background-color:#fff;padding-top:20px;} 
+.garanties-mobile img, .garanties-mobile h5{ margin:0 auto;font-size: 12px;text-transform: uppercase;display:inline-block;}
+.garanties-mobile img{width:35px;}
+.garanties-mobile .instant-text h5{float:right;width:90px;margin:0 auto;}
+}
+
+
+/*================================  */
