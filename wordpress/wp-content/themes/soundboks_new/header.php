@@ -27,29 +27,42 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'soundboks_new' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'soundboks_new' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+	<!-- Header
+	    ============================================= -->
+	    <header class="site-header main-header" id="masthead" role="banner">
+	        <nav class="navbar navbar-main">
+	            <div class="container">
+	                <div class="navbar-header">
+	                  <div class="row">
+	                    <button type="button" class="col-xs-1 navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                        <i class="fa fa-bars" aria-hidden="true"></i>
+	                    </button>
+	                    <a class="navbar-brand col-xs-9" href="#"><img src="<?php bloginfo('template_url'); ?>/images/soundboks-black.png" alt="logo"></a>
+	                    <a href="#" id="shop-cart" class="col-xs-1 visible-xs"><img src="<?php bloginfo('template_url'); ?>/images/cart-full-black.png" alt="shopping cart"></a>
+	                  </div>
+	                </div>
+	                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+	                    <div class="col-md-8 col-xs-12 nav-wrap">
+	                        <ul class="nav navbar-nav nav-region">
+	                            <li><a href="#owl-hero" class="page-scroll">US</a></li>
+	                            <li><a href="#owl-hero" class="line">|</a></li>
+	                            <li><a href="#services" class="page-scroll">Europe</a></li>
+	                        </ul>
+	                    </div>
+	                    <div class="main-shop hidden-xs">
+	                    	<?php wp_nav_menu( array('menu_class' =>'nav navbar-nav', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+	                     <!--    <ul class="">
+	                            <li><a href="#">Speaker</a></li>
+	                            <li><a href="#">Shop</a></li>
+	                            <li><a href="#">Support</a></li>
+	                            <li><a href="#" id="shop-cart"><img src="<?php bloginfo('template_url'); ?>/images/cart-full-black.png" alt="shopping cart"></a></li>
+	                        </ul> -->
+	                    </div>
+	                </div>
+	            </div>
+	        </nav>
+	    </header>
+	<!--End  Header #masthead 
+	    ============================================= -->
 
 	<div id="content" class="site-content">
