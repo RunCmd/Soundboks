@@ -114,7 +114,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+    <script type=’text/javascript’>
+	$(document).ready(function() {
+		$("body").addClass("rerer");
+		$('.shop_table.cart').closest('form').find('input[name="update_cart"]' ).removeProp('disabled');
+	});
+</script>
 <?php wp_footer(); ?>
+
+
 
 </body>
 </html>
