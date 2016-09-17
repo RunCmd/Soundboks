@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Soundboks</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/mystyle.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+     <!--Fonts Styles-->
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header
+    ============================================= -->
+    <header class="main-header">
+        <nav class="navbar navbar-main">
+            <div class="container">
+                <div class="navbar-header">
+                  <div class="row">
+                    <button type="button" class="col-xs-1 navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <a class="navbar-brand col-xs-9" href="#"><img src="images/soundboks-black.png" alt="logo"></a>
+                    <a href="#" id="shop-cart" class="col-xs-1 visible-xs"><img src="images/cart-full-black.png" alt="shopping cart"></a>
+                  </div>
+                </div>
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <div class="col-md-8 col-xs-12 nav-wrap">
+                        <ul class="nav navbar-nav nav-region">
+                            <li><a href="#owl-hero" class="page-scroll">US</a></li>
+                            <li><a href="#owl-hero" class="line">|</a></li>
+                            <li><a href="#services" class="page-scroll">Europe</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-shop">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Speaker</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#" id="shop-cart"><img src="images/cart-full-black.png" alt="shopping cart"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!--End  Header
+    ============================================= -->
+  <!--CART / Garanties Section - CONTENT START
+    ============================================= -->
+ <section class="garanties">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="cart-i">
+                    <img src="images/big-cart-icon.png" alt="big cart" />
+                    <h1>CART</h1>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-xs hidden-sm width-icons">
+                <div class="icons-i">
+                    <img src="images/return-icon.png" alt="big cart" />
+                    <h1>30 Days return</h1>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-xs hidden-sm width-icons">
+                <div class="icons-i">
+                    <img src="images/materials.png" alt="big cart" />
+                    <h1>2 Years Warranty</h1>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-xs hidden-sm width-icons">
+                <div class="icons-i">
+                    <img src="images/shipping-icon.png" alt="big cart" />
+                    <h1 id="world-text">Worldwide Instant Shipping</h1>
+                </div>
+            </div>
+        </div><!-- end Row /*** -->
+        
+    </div><!--end container/**** -->
+ </section>
+<!--End CART /GARANTS SECTION
+    ============================================= -->
+
+    <!-- THE SHOP CART SECTION
+    =============================================-->
+    <section class="shop-cart">
+        <hr>
+        <div class="container">
+            <form class="form-actions" action="" method="POST">
+            <div class="row top-space">
+                <div class="col-md-4">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="images/4.png" alt="speaker">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">SOUNDBOKS PEAKER SYSTEM</h4>
+                        <p>Two BATTERYBOKS, AUX cable, 220V charge.</p>
+
+                          <p>  Shipping: 2-3 days.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1 col-xs-push-4 col-xs-2 col-md-push-0">
+                    <div class="price-card">
+                        <a href="#">&euro;699.00</a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-pull-3 col-xs-6 col-md-pull-0">
+                    <div class="quantity-card text-center">
+                        <a href="#"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+                        <div class="quanty">
+                            <input type="hidden" class="form-control" id="exampleInputAmount">3
+                        </div>
+                        <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <div class="total-card text-right">
+                        <a href="#">&euro;2.796.00</a>
+                    </div>
+                </div>
+                <div class="col-md-1 hidden-xs">
+                    <div class="total-card">
+                         <a href="" id="del-all-card"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div><!--end row/**** -->
+            <div class="divider"></div>
+            <div class="row top-space">
+                <div class="col-md-4">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="images/4.png" alt="speaker">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">SOUNDBOKS PEAKER SYSTEM</h4>
+                        <p>Two BATTERYBOKS, AUX cable, 220V charge.</p>
+
+                          <p>  Shipping: 2-3 days.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1 col-xs-push-4 col-xs-2 col-md-push-0">
+                    <div class="price-card">
+                        <a href="#">&euro;699.00</a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-pull-3 col-xs-6 col-md-pull-0">
+                    <div class="quantity-card text-center">
+                        <a href="#"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+                        <div class="quanty">
+                            <input type="hidden" class="form-control" id="exampleInputAmount">3
+                        </div>
+                        <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <div class="total-card text-right">
+                        <a href="#">&euro;2.796.00</a>
+                    </div>
+                </div>
+                <div class="col-md-1 hidden-xs">
+                    <div class="total-card">
+                         <a href="" id="del-all-card"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div><!--end row/**** -->
+            <hr>
+            <div class="row">
+                <div class="col-md-7">
+                   <div class="form-inline form-discount">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="DISCOUNT CODE">
+                        </div>
+                      </div>
+                      <button type="submit" value="apply" class="btn btn-apply">Apply Discount</button>
+                  </div>
+                  <div class="check-disc">
+                    <i class="fa fa-check-circle hidden-xs hidden-sm" aria-hidden="true"></i>
+                    <h3 class="hidden-xs hidden-sm"><span>SBJULY16</span>: $200 discount for purchase of a SOUNDBOKS
+                    or other related products above $600</h3>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <h3><span>SBJULY16</span>: $200 discount for purchase of a SOUNDBOKS
+                    or other related products above $600</h3>
+                  </div>
+                </div>
+                <div class="col-md-4 col-md-offset-1">
+                    <div class="total-all">
+                        <h3>Total  <span class="value-spend">&dollar; 799</span></h3>
+                        <h3>APPLIED DISCOUNT  <span class="value-spend">-&dollar;3,459.00</span></h3>
+                        <h3>ORDER SUBTOTAL  <span class="value-spend">&dollar; $17,997</span></h3>
+                        <div class="form-inline">
+                           <a href="#" class="update-cart">
+                              <i class="fa fa-refresh" aria-hidden="true"></i> Update Cart
+                           </a>
+                           <button type="submit" class="btn btn-checkout" value="checkout">Checkout</button>
+                        </div>
+                         <div class="checkout-info">
+                             <p>INCl. 15% VAT 230,- DKK</p>
+                             <p>PAY AS LITTLE AS $25/MONTH</p>
+                             <p>Apply & check out in seconds</p>
+                             <a href="#">Learn More</a>
+                         </div>
+                    </div>
+                </div>
+            </div><!--end row/**** -->
+         </form>
+        </div><!--end container/**** -->
+    </section>
+    <!--End THE SHOP CART SECTION
+    ============================================== -->
+
+     <!--ALSO INTERSTED SECTION FORTH
+    ============================================== -->
+    <section class="interest-in hidden-xs hidden-sm">
+        <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-4">
+               <h2 class="hr-line"></h2>
+            </div>
+            <div class="col-md-4 content-in text-center"><h2><span class="line"></span>YOU MIGHT ALSO BE INTERESTED IN...<span class="line"></span></h2></div>
+             <div class="col-md-4">
+               <h2 class="hr-line"></h2>
+            </div>
+         </div>
+        </div><!-- End fluid CONTAINER /*********-->
+        <div class="container in-stock">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="images/item-img.png" alt="microphone">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="#" class="media-heading">
+                            <div class="title-stock">
+                                <h3>NUCLEAR PACKAGE</h3>
+                                 <p>Charge your phone up to 6 times on a single charge.</p>
+                            </div>
+                            <div class="cost-stock">
+                                <p>$1,340</p>
+                                <p>PAY FROM €30/MONTH</p>
+                                <span>read about Klarna</span>
+                            </div>
+                        </a>
+                      </div>
+                    </div><!-- End STOCK Product /******-->
+
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="images/item-img.png" alt="microphone">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="#" class="media-heading">
+                            <div class="title-stock">
+                                <h3>NUCLEAR PACKAGE</h3>
+                                 <p>Charge your phone up to 6 times on a single charge.</p>
+                            </div>
+                            <div class="cost-stock">
+                                <p>$1,340</p>
+                                <p>PAY FROM €30/MONTH</p>
+                                <span>read about Klarna</span>
+                            </div>
+                        </a>
+                      </div>
+                    </div><!-- End STOCK Product /******-->
+                </div>
+                <div class="col-md-6">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="images/item-img.png" alt="microphone">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="#" class="media-heading">
+                            <div class="title-stock">
+                                <h3>NUCLEAR PACKAGE</h3>
+                                 <p>Charge your phone up to 6 times on a single charge.</p>
+                            </div>
+                            <div class="cost-stock">
+                                <p>$1,340</p>
+                                <p>PAY FROM €30/MONTH</p>
+                                <span>read about Klarna</span>
+                            </div>
+                        </a>
+                      </div>
+                    </div><!-- End STOCK Product /******-->
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="images/item-img.png" alt="microphone">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="#" class="media-heading">
+                            <div class="title-stock">
+                                <h3>NUCLEAR PACKAGE</h3>
+                                 <p>Charge your phone up to 6 times on a single charge.</p>
+                            </div>
+                            <div class="cost-stock">
+                                <p>$1,340</p>
+                                <p>PAY FROM €30/MONTH</p>
+                                <span>read about Klarna</span>
+                            </div>
+                        </a>
+                      </div>
+                    </div><!-- End STOCK Product /******-->
+                </div>
+            </div>
+        </div>
+        <!-- PRODUCTS end /********-->
+        <hr>
+    </section>
+     <!--End SECTION FORTH CONTENT END
+    ============================================== -->
+   
+   <!--SECTION Fifth FOOTER
+    ============================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6  hidden-sm hidden-xs">
+                  <a class="navbar-brand" href="#"><img src="images/soundboks-black.png" class="img-responsive" alt="logo"></a>
+                </div>
+                <div class="col-md-6">
+                  <nav class="nav-links">
+                    <ul class="nav">
+                      <li><a href="#">Shop </a></li>
+                      <li><a href="#">|</a></li>
+                      <li><a href="#">Support </a></li>
+                       <li><a href="#">|</a></li>
+                      <li><a href="#">Contact </a></li>
+                       <li><a href="#">|</a></li>
+                      <li><a href="#">About </a></li>
+                       <li><a href="#">|</a></li>
+                      <li><a href="#">Press</a></li>
+                       <li><a href="#">|</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+            </div>
+            <!-- /.row -->
+          <div class="row latest-offer">
+             <div class="col-md-6 hidden-sm hidden-xs">
+                <h4>Get Latest news and Offers</h4>
+                 <div class="form-inline form-discount">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="YOUR EMAIL">
+                        </div>
+                      </div>
+                      <button type="submit" value="subscribe" class="btn btn-subscribe">Subscribe</button>
+                      <address>
+                        <p>1298 Cuernavaca Circulo</p>
+                        <p>94040 Mountain View, California, USA</p>
+                      </address>
+                  </div>
+              </div><!--/**** col-md-6 Latest News end / SUBSCRIBE -->
+              <div class="col-md-6">
+                <nav class="socials-icons">
+                    <ul class="nav">
+                      <li><a href="#"><img src="images/facebok.png" alt="facebook"></a></a></li>
+                      <li><a href="#"><img src="images/instagram.png" alt="facebook"></a></a></li>
+                      <li><a href="#"><img src="images/twitter.png" alt="facebook"></a></li>
+                    </ul>
+                    <div class="credit">
+                      <img src="images/payments-checkouts.png" alt="credit cards" />
+                    </div>
+                  </nav>
+              </div>
+           </div>
+                <!-- /.row -->
+           <div class="row privacy hidden-sm hidden-xs">
+            <div class="col-md-6">
+              <p>© 2016 SOUNDBOKS, Inc. </p>
+            </div>
+            <div class="col-md-6 text-right">
+              <p>By continuing to use our website you agree to the use of cookies as described in the <a href="#">Privacy Policy</a></p>
+            </div>
+           </div><!-- /.row -->
+        </div>
+        <!-- /.container -->
+          <div class="loud-music">
+            <h3>MADE WITH LOVE AND LOUD MUSIC IN COPENHAGEN</h3>
+          </div>
+<!--         MOBILE ONLY garanties 
+          <div class="container">
+            <div class="row hidden-md hidden-lg garanties-mobile">
+            <div class="col-md-3 col-xs-4 col-sm-4">
+                <div class="icons-i">
+                    <img src="images/return-icon.png" alt="big cart" />
+                    <h5>30 Days return</h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-4 col-sm-4">
+                <div class="icons-i">
+                    <img src="images/materials.png" alt="big cart" />
+                    <h5>2 Years Warranty</h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-4 col-sm-4 instant-text">
+                <div class="icons-i">
+                    <img src="images/shipping-icon.png" alt="big cart" />
+                    <h5>Worldwide Instant Shipping</h5>
+                </div>
+            </div>
+           </div>
+        </div> -->
+    </footer>
+        <!-- Footer /.-->
+  <!--SECTION Fifth FOOTER
+    ============================================== -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
