@@ -56,10 +56,30 @@ a:active, a:visited{outline:none;background-color:transparent;}
 /***************************/
 
 /* SECTION THIRD SHOP CART*/
+.product-quantity .buttons_added button{background-color:transparent;margin:0 auto;display:block;border:0;font-size: 30px;
+    color: #f47c60;}
+.product-quantity .buttons_added button:focus, .product-quantity .buttons_added button:visited{outline:none;}
+.product-quantity .buttons_added input{border:0px; vertical-align: text-bottom;}
+.product-quantity .buttons_added .input-text:focus{outline:none;}
+.product-quantity .buttons_added input[type=number]::-webkit-inner-spin-button, 
+.product-quantity .buttons_added input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;    
+}
+
+
 .checkout-info a:hover{text-decoration:none;color:#f47c60;}
 .shop-cart .media-body{padding-left:25px;}
 .shop-cart .divider{ border: dashed 1px rgba(0, 0, 0, 0.06);}
 .shop-cart .top-space{padding:25px 0px;}
+.top-space .media-left{float:left;}
+.top-space .media-left img{width:150px;max-width:100%;}
 .shop-cart .price-card , .shop-cart .total-card{padding: 42px 0px;}
 .shop-cart .total-card a{ font-size: 20px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 0.9;color: #000000;}
 .shop-cart .price-card a{font-size: 20px;font-weight: 300;font-style: normal;font-stretch: normal;color: #000000;}
@@ -69,6 +89,8 @@ a:active, a:visited{outline:none;background-color:transparent;}
 .shop-cart .quanty{font-size:20px;    text-indent: 3px;}
 #del-all-card{padding: 0 15px;opacity:0.2;}
 #del-all-card:hover{color:#f47c60;opacity:1;}
+.update-cart button{background:none;border:0px;}
+.update-cart button:focus{outline:none;}
 /* Sub********** FORM DISCOUNT  AND TOTAL*/
 .form-discount input{opacity:0.6;min-height:60px;border: solid 1px #dddddd;font-size:20px;line-height: 0.9;color: #cecece;}
 .form-discount input:focus{box-shadow:none;border-color:none;}
@@ -87,7 +109,7 @@ a:active, a:visited{outline:none;background-color:transparent;}
 .value-spend{float:right;padding-right:20px;}
 .total-all .update-cart{display: block;float:left;text-transform:uppercase;font-size: 20px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 2.9;color: #000000;}
 .total-all .update-cart:hover,.total-all .update-cart:focus,.total-all .update-cart:visited{text-decoration:none;}
-.total-all .btn-checkout{display: block;float: right;font-size: 20px;width: 177px;height: 60px;text-transform: uppercase;color:#fff; border-radius: 100px;background-color: #f47c60;}
+.total-all .btn-checkout{padding: 15px 0px;display: block;float: right;font-size: 20px;width: 177px;height: 60px;text-transform: uppercase;color:#fff; border-radius: 100px;background-color: #f47c60;}
 .total-all .update-cart i{margin-right: 10px;opacity: 0.3;}
 /*============================= */
 .checkout-info{float:right;display: block;clear: both;margin-left: auto;}
@@ -163,6 +185,7 @@ a:active, a:visited{outline:none;background-color:transparent;}
 /****** **********/
 	
 /****** CART SHOP/ ******/
+.product-quantity .buttons_added button{display:inline-block;}
 .shop-cart .media-object{width: 76.8px;}
 .shop-cart .quantity-card a{font-size:25px;}
 .shop-cart .quanty{font-size:18px;}

@@ -114,6 +114,11 @@ function soundboks_new_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'soundboks_new_scripts' );
 
+/* Add INCREMENT */
+add_action( 'wp_enqueue_scripts', 'wcs_dequeue_quantity' );
+function wcs_dequeue_quantity() {
+    wp_dequeue_style( 'wcqi-css' );
+}
 /**
  * Implement the Custom Header feature.
  */

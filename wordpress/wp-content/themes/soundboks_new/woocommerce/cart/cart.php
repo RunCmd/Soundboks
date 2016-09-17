@@ -68,7 +68,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
-		<?php
+		
+				<!-- THE SHOP CART SECTION
+    =============================================-->
+    <section class="shop-cart">
+        <hr>
+        <div class="container">
+        	<?php
 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 			$_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
 			$product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
@@ -76,15 +82,24 @@ do_action( 'woocommerce_before_cart' ); ?>
 			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 				$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 				?>
-				<!-- THE SHOP CART SECTION
-    =============================================-->
-    <section class="shop-cart">
-        <hr>
-        <div class="container">
             <div class="row top-space">
-                <div class="col-md-4">
+            	  <div class="col-xs-12 hidden-lg hidden-md">
+                    <div class="total-card product-remove pull-right">
+                         <?php
+                          echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
+                            '<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+                            esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
+                            __( 'Remove this item', 'woocommerce' ),
+                            esc_attr( $product_id ),
+                            esc_attr( $_product->get_sku() )
+                          ), $cart_item_key );
+                        ?>
+                         <!-- <a href="" id="del-all-card"><i class="fa fa-times" aria-hidden="true"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
                     <div class="media">
-                      <div class="media-left" style="float:left;">
+                      <div class="media-left">
                         <?php
                             $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
@@ -131,7 +146,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                 </div>
                 <div class="col-md-2 col-xs-pull-3 col-xs-6 col-md-pull-0">
                     <div class="quantity-card text-center product-quantity" data-title="<?php _e( 'Quantity', 'woocommerce' ); ?>">
-                        <a href="#"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+                        <!-- <a href="#"><i class="fa fa-caret-up" aria-hidden="true"></i></a> -->
                         <?php
                           if ( $_product->is_sold_individually() ) {
                             $product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -146,7 +161,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
                           echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
                         ?>
-                        <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                       <!--  <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a> -->
                         <!-- <a href="#"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
                         <div class="quanty">
                             <input type="hidden" class="form-control" id="exampleInputAmount">3
@@ -162,7 +177,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                         <!-- <a href="#">&euro;2.796.00</a> -->
                     </div>
                 </div>
-                <div class="col-md-1 hidden-xs">
+                <div class="col-md-1 hidden-xs hidden-sm">
                     <div class="total-card product-remove">
                          <?php
                           echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
@@ -206,21 +221,22 @@ do_action( 'woocommerce_before_cart' ); ?>
                   </div>
                 </div>
                 <div class="col-md-4 col-md-offset-1">
-                    <div class="total-all">
-                        <h3>Total  <span class="value-spend">&dollar; 799</span></h3>
+                    <div class="total-all <?php if ( WC()->customer->has_calculated_shipping() ) echo 'calculated_shipping'; ?>">
+                        <h3 data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>">Total  <span class="value-spend"><?php wc_cart_totals_order_total_html(); ?></span></h3>
                         <h3>APPLIED DISCOUNT  <span class="value-spend">-&dollar;3,459.00</span></h3>
-                        <h3>ORDER SUBTOTAL  <span class="value-spend">&dollar; $17,997</span></h3>
+                        <h3 data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">ORDER SUBTOTAL  <span class="value-spend"><?php wc_cart_totals_subtotal_html(); ?></span></h3>
                         <div class="form-inline">
                            <div class="update-cart">
-                              <i class="fa fa-refresh" aria-hidden="true"></i>
-                              <input type="submit" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'woocommerce' ); ?>" /> Update Cart
+                              <button type="submit" type="submit" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'woocommerce' ); ?>"> <i class="fa fa-refresh" aria-hidden="true"></i> Update Cart</button>
                            <?php do_action( 'woocommerce_cart_actions' ); ?>
                            <?php wp_nonce_field( 'woocommerce-cart' ); ?>
                            </div>
                            
 
                            
-                           <button type="submits" class="btn btn-checkout" value="checkout">Checkout</button>
+                           <a href="<?php echo esc_url( wc_get_checkout_url() ) ;?>" type="submits" class="btn btn-checkout" value="checkout">
+                           	<?php echo __( 'Checkout', 'woocommerce' ); ?>
+                           </a>
                         </div>
                          <div class="checkout-info">
                              <p>INCl. 15% VAT 230,- DKK</p>
