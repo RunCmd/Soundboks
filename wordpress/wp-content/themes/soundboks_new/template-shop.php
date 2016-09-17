@@ -265,48 +265,6 @@ get_header(); ?>
                       </div>
                     </div><!-- End STOCK Product /******-->
                 </div>
-                <div class="col-md-6">
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="<?php bloginfo('template_url'); ?>/images/item-img.png" alt="microphone">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#" class="media-heading">
-                            <div class="title-stock">
-                                <h3>NUCLEAR PACKAGE</h3>
-                                 <p>Charge your phone up to 6 times on a single charge.</p>
-                            </div>
-                            <div class="cost-stock">
-                                <p>$1,340</p>
-                                <p>PAY FROM €30/MONTH</p>
-                                <span>read about Klarna</span>
-                            </div>
-                        </a>
-                      </div>
-                    </div><!-- End STOCK Product /******-->
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="<?php bloginfo('template_url'); ?>/images/item-img.png" alt="microphone">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                        <a href="#" class="media-heading">
-                            <div class="title-stock">
-                                <h3>NUCLEAR PACKAGE</h3>
-                                 <p>Charge your phone up to 6 times on a single charge.</p>
-                            </div>
-                            <div class="cost-stock">
-                                <p>$1,340</p>
-                                <p>PAY FROM €30/MONTH</p>
-                                <span>read about Klarna</span>
-                            </div>
-                        </a>
-                      </div>
-                    </div><!-- End STOCK Product /******-->
-                </div>
             </div>
         </div>
         <!-- PRODUCTS end /********-->
